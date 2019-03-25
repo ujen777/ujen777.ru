@@ -101,7 +101,7 @@ html, body {
   color: #8993ad;
 }
 
-.button-card {
+.to-learn-more__button {
   border: none;
   margin-top: 30px;
   padding: 20px 40px;
@@ -112,14 +112,14 @@ html, body {
   cursor: pointer;
 }
 
-.shutterstock {
+.author-photo {
   position: absolute;
   right: 8%;
   bottom: 0;
   width: 400px;
 }
 
-.ellipse {
+.label {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,7 +134,7 @@ html, body {
   margin-bottom: 30px;
 }
 @media (max-width: 990px) {
-  .ellipse {
+  .label {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -148,7 +148,7 @@ html, body {
   .card {
     margin: 0px;
   }
-  .shutterstock {
+  .author-photo {
     bottom: 200px;
   }
 }
@@ -160,17 +160,17 @@ html, body {
     font-size: 16px;
     text-align: center;
   }
-  .ellipse {
+  .label {
     background-position:
     right bottom 160px;
     height: 600px;
     background-size: 450px;
   }
-  .shutterstock {
+  .author-photo {
     width: 280px;
     bottom: 160px;
   }
-  .button-card {
+  .to-learn-more__button {
     margin-top: 20px;
   }
   .card {
@@ -178,7 +178,7 @@ html, body {
   }
 }
 
-[class^="elements"] {
+[class*="elements"] {
   font-size: 28px;
   color: #f91482;
   font-weight: bold;
@@ -195,7 +195,7 @@ html, body {
   left: 0;
 }
 
-.elements__curly-brackets {
+.curly-brackets__elements {
   -webkit-transform: translate(100px, 100px) rotate(30deg);
       -ms-transform: translate(100px, 100px) rotate(30deg);
           transform: translate(100px, 100px) rotate(30deg);
@@ -205,7 +205,7 @@ html, body {
           user-select: none;
 }
 
-.elements__hash-sign {
+.hash-sign__elements {
   -webkit-transform: translate(200px, 400px) rotate(30deg);
       -ms-transform: translate(200px, 400px) rotate(30deg);
           transform: translate(200px, 400px) rotate(30deg);
@@ -215,7 +215,7 @@ html, body {
           user-select: none;
 }
 
-.elements__slash_2 {
+.slash__elements2 {
   -webkit-transform: translate(500px, 450px) rotate(30deg);
       -ms-transform: translate(500px, 450px) rotate(30deg);
           transform: translate(500px, 450px) rotate(30deg);
@@ -225,7 +225,7 @@ html, body {
           user-select: none;
 }
 
-.elements__slash {
+.slash__elements1 {
   -webkit-transform: translate(400px, 120px) rotate(30deg);
       -ms-transform: translate(400px, 120px) rotate(30deg);
           transform: translate(400px, 120px) rotate(30deg);
@@ -235,7 +235,7 @@ html, body {
           user-select: none;
 }
 
-.elements-div {
+.div__elements {
   -webkit-transform: translate(1400px, 0px) rotate(390deg);
       -ms-transform: translate(1400px, 0px) rotate(390deg);
           transform: translate(1400px, 0px) rotate(390deg);
@@ -246,7 +246,7 @@ html, body {
 }
 
 @media (min-width: 1680px) {
-  .elements-div {
+  .div__elements {
   -webkit-transform: translate(1150px, 0px) rotate(30deg);
       -ms-transform: translate(1150px, 0px) rotate(30deg);
           transform: translate(1150px, 0px) rotate(30deg);
@@ -254,7 +254,7 @@ html, body {
 }
 
 @media (min-width: 1900px) {
-  .elements-div {
+  .div__elements {
   -webkit-transform: translate(1350px, 0px) rotate(30deg);
       -ms-transform: translate(1350px, 0px) rotate(30deg);
           transform: translate(1350px, 0px) rotate(30deg);
@@ -262,58 +262,58 @@ html, body {
 }
 
 @media (max-width: 1500px) {
-  .elements-div {
+  .div__elements {
   -webkit-transform: translate(1200px, 0px) rotate(30deg);
       -ms-transform: translate(1200px, 0px) rotate(30deg);
           transform: translate(1200px, 0px) rotate(30deg);
   }
-  .elements__slash_2 {
+  .slash__elements2 {
   -webkit-transform: translate(300px, 400px) rotate(30deg);
       -ms-transform: translate(300px, 400px) rotate(30deg);
           transform: translate(300px, 400px) rotate(30deg);
   }
 }
 @media (max-width: 1300px) {
-  .elements-div {
+  .div__elements {
   -webkit-transform: translate(1020px, -50px) rotate(390deg);
       -ms-transform: translate(1020px, -50px) rotate(390deg);
           transform: translate(1020px, -50px) rotate(390deg);
   }
 }
 @media (max-width: 1100px) {
-  .elements-div {
+  .div__elements {
   -webkit-transform: translate(850px, 0px) rotate(30deg);
       -ms-transform: translate(850px, 0px) rotate(30deg);
           transform: translate(850px, 0px) rotate(30deg);
   }
-  .elements__curly-brackets {
+  .curly-brackets__elements {
   -webkit-transform: translate(200px, 200px) rotate(30deg);
       -ms-transform: translate(200px, 200px) rotate(30deg);
           transform: translate(200px, 200px) rotate(30deg);
   }
-  .elements__slash_2 {
+  .slash__elements2 {
     display: none;
   }
 }
 @media (max-width: 940px) {
-  .elements-div {
+  .div__elements {
   -webkit-transform: translate(750px, 0px) rotate(30deg);
       -ms-transform: translate(750px, 0px) rotate(30deg);
           transform: translate(750px, 0px) rotate(30deg);
   }
 }
 @media (max-width: 840px) {
-  .elements-div {
+  .div__elements {
     -webkit-transform: translate(600px, 0px) rotate(30deg);
         -ms-transform: translate(600px, 0px) rotate(30deg);
             transform: translate(600px, 0px) rotate(30deg);
   }
-  .elements__slash {
+  .slash__elements1 {
   -webkit-transform: translate(300px, 80px) rotate(30deg);
       -ms-transform: translate(300px, 80px) rotate(30deg);
           transform: translate(300px, 80px) rotate(30deg);
   }
-  .elements__hash-sign {
+  .hash-sign__elements {
   -webkit-transform: translate(150px, 300px) rotate(30deg);
       -ms-transform: translate(150px, 300px) rotate(30deg);
           transform: translate(150px, 300px) rotate(30deg);
@@ -321,69 +321,69 @@ html, body {
 }
 
 @media (max-width: 720px) {
-  .elements-div {
+  .div__elements {
     -webkit-transform: translate(500px, 0px) rotate(30deg);
         -ms-transform: translate(500px, 0px) rotate(30deg);
             transform: translate(500px, 0px) rotate(30deg);
   }
-  .elements__slash {
+  .slash__elements1 {
   -webkit-transform: translate(200px, 50px) rotate(30deg);
       -ms-transform: translate(200px, 50px) rotate(30deg);
           transform: translate(200px, 50px) rotate(30deg);
   }
-  .elements__curly-brackets {
+  .curly-brackets__elements {
   -webkit-transform: translate(150px, 200px) rotate(30deg);
       -ms-transform: translate(150px, 200px) rotate(30deg);
           transform: translate(150px, 200px) rotate(30deg);
   }
-  .elements__hash-sign {
+  .hash-sign__elements {
   -webkit-transform: translate(100px, 250px) rotate(30deg);
       -ms-transform: translate(100px, 250px) rotate(30deg);
           transform: translate(100px, 250px) rotate(30deg);
   }
 }
 @media (max-width: 580px) {
-  .elements-div {
+  .div__elements {
     -webkit-transform: translate(380px, 0px) rotate(30deg);
         -ms-transform: translate(380px, 0px) rotate(30deg);
             transform: translate(380px, 0px) rotate(30deg);
   }
-  .elements__slash {
+  .slash__elements1 {
   -webkit-transform: translate(350px, -50px) rotate(30deg);
       -ms-transform: translate(350px, -50px) rotate(30deg);
           transform: translate(350px, -50px) rotate(30deg);
   }
-  .elements__curly-brackets {
+  .curly-brackets__elements {
   -webkit-transform: translate(50px, 100px) rotate(30deg);
       -ms-transform: translate(50px, 100px) rotate(30deg);
           transform: translate(50px, 100px) rotate(30deg);
   }
-  .elements__hash-sign {
+  .hash-sign__elements {
   -webkit-transform: translate(100px, 150px) rotate(30deg);
       -ms-transform: translate(100px, 150px) rotate(30deg);
           transform: translate(100px, 150px) rotate(30deg);
   }
 }
 @media (max-width: 460px) {
-  [class^="elements"] {
+  [class*="elements"] {
     font-size: 20px;
   }
-  .elements-div {
+  .div__elements {
     -webkit-transform: translate(280px, 30px) rotate(30deg);
         -ms-transform: translate(280px, 30px) rotate(30deg);
             transform: translate(280px, 30px) rotate(30deg);
   }
-  .elements__slash {
+  .slash__elements1 {
   -webkit-transform: translate(200px, -15px) rotate(30deg);
       -ms-transform: translate(200px, -15px) rotate(30deg);
           transform: translate(200px, -15px) rotate(30deg);
   }
-  .elements__curly-brackets {
+  .curly-brackets__elements {
   -webkit-transform: translate(50px, 50px) rotate(30deg);
       -ms-transform: translate(50px, 50px) rotate(30deg);
           transform: translate(50px, 50px) rotate(30deg);
   }
-  .elements__hash-sign {
+  .hash-sign__elements {
   -webkit-transform: translate(30px, 120px) rotate(30deg);
       -ms-transform: translate(30px, 120px) rotate(30deg);
           transform: translate(30px, 120px) rotate(30deg);
@@ -421,7 +421,7 @@ html, body {
   font-size: 14px;
 }
 
-.button-top {
+.request-a-call__button {
   border: 1px solid #f82370;
   margin: 10px;
   padding: 15px 40px;
@@ -430,7 +430,7 @@ html, body {
   background-color: #ffffff;
   cursor: pointer;
 }
-.arrow {
+.scrolling-slides__button {
   width: 60px;
   height: 60px;
   margin: 10px;
