@@ -236,36 +236,36 @@ html, body {
 }
 
 .elements-div {
-  -webkit-transform: translate(1200px, 0px) rotate(390deg);
-      -ms-transform: translate(1200px, 0px) rotate(390deg);
-          transform: translate(1200px, 0px) rotate(390deg);
+  -webkit-transform: translate(1400px, 0px) rotate(390deg);
+      -ms-transform: translate(1400px, 0px) rotate(390deg);
+          transform: translate(1400px, 0px) rotate(390deg);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 
-@media (min-width: 1540px) {
+@media (min-width: 1680px) {
   .elements-div {
-  -webkit-transform: translate(1450px, 0px) rotate(30deg);
-      -ms-transform: translate(1450px, 0px) rotate(30deg);
-          transform: translate(1450px, 0px) rotate(30deg);
+  -webkit-transform: translate(1150px, 0px) rotate(30deg);
+      -ms-transform: translate(1150px, 0px) rotate(30deg);
+          transform: translate(1150px, 0px) rotate(30deg);
   }
 }
 
-@media (min-width: 1750px) {
+@media (min-width: 1900px) {
   .elements-div {
-  -webkit-transform: translate(1650px, 0px) rotate(30deg);
-      -ms-transform: translate(1650px, 0px) rotate(30deg);
-          transform: translate(1650px, 0px) rotate(30deg);
+  -webkit-transform: translate(1350px, 0px) rotate(30deg);
+      -ms-transform: translate(1350px, 0px) rotate(30deg);
+          transform: translate(1350px, 0px) rotate(30deg);
   }
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 1500px) {
   .elements-div {
-  -webkit-transform: translate(1000px, 0px) rotate(30deg);
-      -ms-transform: translate(1000px, 0px) rotate(30deg);
-          transform: translate(1000px, 0px) rotate(30deg);
+  -webkit-transform: translate(1200px, 0px) rotate(30deg);
+      -ms-transform: translate(1200px, 0px) rotate(30deg);
+          transform: translate(1200px, 0px) rotate(30deg);
   }
   .elements__slash_2 {
   -webkit-transform: translate(300px, 400px) rotate(30deg);
@@ -273,18 +273,18 @@ html, body {
           transform: translate(300px, 400px) rotate(30deg);
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .elements-div {
-  -webkit-transform: translate(850px, -50px) rotate(390deg);
-      -ms-transform: translate(850px, -50px) rotate(390deg);
-          transform: translate(850px, -50px) rotate(390deg);
+  -webkit-transform: translate(1020px, -50px) rotate(390deg);
+      -ms-transform: translate(1020px, -50px) rotate(390deg);
+          transform: translate(1020px, -50px) rotate(390deg);
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 1100px) {
   .elements-div {
-  -webkit-transform: translate(730px, 0px) rotate(30deg);
-      -ms-transform: translate(730px, 0px) rotate(30deg);
-          transform: translate(730px, 0px) rotate(30deg);
+  -webkit-transform: translate(850px, 0px) rotate(30deg);
+      -ms-transform: translate(850px, 0px) rotate(30deg);
+          transform: translate(850px, 0px) rotate(30deg);
   }
   .elements__curly-brackets {
   -webkit-transform: translate(200px, 200px) rotate(30deg);
@@ -295,8 +295,14 @@ html, body {
     display: none;
   }
 }
-
-@media (max-width: 820px) {
+@media (max-width: 940px) {
+  .elements-div {
+  -webkit-transform: translate(750px, 0px) rotate(30deg);
+      -ms-transform: translate(750px, 0px) rotate(30deg);
+          transform: translate(750px, 0px) rotate(30deg);
+  }
+}
+@media (max-width: 840px) {
   .elements-div {
     -webkit-transform: translate(600px, 0px) rotate(30deg);
         -ms-transform: translate(600px, 0px) rotate(30deg);
@@ -363,14 +369,14 @@ html, body {
     font-size: 20px;
   }
   .elements-div {
-    -webkit-transform: translate(250px, 30px) rotate(30deg);
-        -ms-transform: translate(250px, 30px) rotate(30deg);
-            transform: translate(250px, 30px) rotate(30deg);
+    -webkit-transform: translate(280px, 30px) rotate(30deg);
+        -ms-transform: translate(280px, 30px) rotate(30deg);
+            transform: translate(280px, 30px) rotate(30deg);
   }
   .elements__slash {
-  -webkit-transform: translate(200px, -10px) rotate(30deg);
-      -ms-transform: translate(200px, -10px) rotate(30deg);
-          transform: translate(200px, -10px) rotate(30deg);
+  -webkit-transform: translate(200px, -15px) rotate(30deg);
+      -ms-transform: translate(200px, -15px) rotate(30deg);
+          transform: translate(200px, -15px) rotate(30deg);
   }
   .elements__curly-brackets {
   -webkit-transform: translate(50px, 50px) rotate(30deg);
