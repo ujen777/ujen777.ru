@@ -121,10 +121,10 @@ html, body {
 .label {
   position: relative;
   display: -webkit-box;
-  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
   background:
   url(../img/ellipse.svg) no-repeat right bottom;
@@ -135,10 +135,10 @@ html, body {
 @media (max-width: 990px) {
   .label {
     -webkit-box-align: end;
-        -ms-flex-align: end;
+            -webkit-align-items: flex-end;
             align-items: flex-end;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
+            -webkit-justify-content: center;
             justify-content: center;
     background-position:
     right bottom 200px;
@@ -183,7 +183,6 @@ html, body {
   font-weight: bold;
   -webkit-transition: -webkit-transform 1s ease-out;
           transition: -webkit-transform 1s ease-out;
-       -o-transition: transform 1s ease-out;
           transition: transform 1s ease-out;
           transition: transform 1s ease-out, -webkit-transform 1s ease-out;
 }
@@ -392,21 +391,20 @@ html, body {
 .price {
   height: 365px;
   background: -webkit-linear-gradient(75deg, #ff8f5a 20%, #ff2f96 80%);
-  background: -o-linear-gradient(75deg, #ff8f5a 20%, #ff2f96 80%);
   background: linear-gradient(15deg, #ff8f5a 20%, #ff2f96 80%);
   color: white;
   display: -webkit-box;
-  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
+          -webkit-justify-content: center;
           justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
+          -webkit-align-items: center;
           align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+          -webkit-flex-direction: column;
           flex-direction: column;
 }
 .price p{
@@ -433,8 +431,7 @@ html, body {
   width: 60px;
   height: 60px;
   margin: 10px;
-  -webkit-box-shadow: 0 0 20px #cecece;
-          box-shadow: 0 0 20px #cecece;
+  box-shadow: 0 0 20px #cecece;
   border-radius: 30px;
   border: 0;
   cursor: pointer;
