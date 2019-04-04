@@ -119,6 +119,7 @@ html, body {
 }
 
 .label {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
