@@ -511,29 +511,32 @@ html, body {
   font-family: Roboto;
 }
 
-.card {
+.label__start {
   margin-left:100px;
 }
 
-.name {
+.label__name {
   font-size: 44px;
   font-weight: 900;
 }
 
-.skill {
+.label__skill {
   font-size: 22px;
   color: #8993ad;
 }
 
-.to-learn-more__button {
+.button-orange {
   border: none;
-  margin-top: 30px;
   padding: 20px 40px;
   color: white;
   font-size: 16px;
   background-color: #ff4e2e;
   width: 280px;
   cursor: pointer;
+}
+
+.label__button {
+  margin-top: 30px;
 }
 
 .label__author-photo {
@@ -569,7 +572,7 @@ html, body {
     right bottom 200px;
     height: 800px;
   }
-  .card {
+  .label__start {
     margin: 0px;
   }
   .label__author-photo {
@@ -577,10 +580,10 @@ html, body {
   }
 }
 @media (max-width: 510px) {
-  .name {
+  .label__name {
     font-size: 26px;
   }
-  .skill {
+  .label__skill {
     font-size: 16px;
     text-align: center;
   }
@@ -594,10 +597,10 @@ html, body {
     width: 280px;
     bottom: 160px;
   }
-  .to-learn-more__button {
+  .label__button {
     margin-top: 20px;
   }
-  .card {
+  .label__start {
     margin: 0 20px;
   }
 }
@@ -816,27 +819,32 @@ html, body {
   -webkit-flex-direction: column;
           flex-direction: column;
 }
-.price p{
+
+.price__content {
   margin: 10px;
-}
-.price p:nth-child(1) {
   font-size: 30px;
   font-weight: bold;
 }
-.price p:nth-child(2) {
+
+.price__footnote {
+  margin: 10px;
   font-size: 14px;
 }
 
-.request-a-call__button {
+.button-pink {
   border: 1px solid #f82370;
-  margin: 10px;
   padding: 15px 40px;
   color: #f82370;
   font-size: 16px;
   background-color: #ffffff;
   cursor: pointer;
 }
-.scrolling-slides__button {
+
+.header__button {  
+  margin: 10px;
+}
+
+.work-examples__button-left {
   width: 60px;
   height: 60px;
   margin: 10px;
