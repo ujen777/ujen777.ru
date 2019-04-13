@@ -642,17 +642,20 @@ html, body {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
-}
-
-.skill__header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
+}
+
+.skill__header {
   font-size: 54px;
   font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 510px) {
+  .skill__header {
+    font-size: 30px;
+  }
 }
 
 .skill__list {
@@ -661,23 +664,9 @@ html, body {
   display: flex;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
-  max-width: 1200px;
-}
-
-.container-top {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
-}
-
-.container-bottom {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
 }
 
 .skill__button {
@@ -689,44 +678,28 @@ html, body {
           justify-content: center;
 }
 
+.block-img{
+  width: 220px;
+  height: 70px;
+  padding-top: 100px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin: 30px;
+  color: #8993ad;
+  text-align: center;
+}
+
 .layout {
-  background: url(../img/layout.png) no-repeat center top;
-  width: 260px;
-  height: 160px;
-  padding-top: 100px;
+  background-image: url(../img/layout.png);
 }
-.layout__text {
-  text-align: center;
-}
-
 .adaptive {
-  background: url(../img/adaptive.png) no-repeat center top;
-  width: 260px;
-  height: 160px;
-  padding-top: 100px;
+  background-image: url(../img/adaptive.png);
 }
-.adaptive__text {
-  text-align: center;
-}
-
 .programming {
-  background: url(../img/programming.png) no-repeat center top;
-  width: 260px;
-  height: 160px;
-  padding-top: 100px;
+  background-image: url(../img/programming.png);
 }
-.programming__text {
-  text-align: center;
-}
-
 .rework {
-  background: url(../img/rework.png) no-repeat center top;
-  width: 260px;
-  height: 160px;
-  padding-top: 100px;
-}
-.rework__text {
-  text-align: center;
+  background-image: url(../img/rework.png);
 }
 
 .price {
