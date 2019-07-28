@@ -4,6 +4,8 @@
 	<title>Дипломный проект</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/themify-icons.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -11,10 +13,60 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 	<link rel="manifest" href="favicon/site.webmanifest">
 	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ff2f96">
 </head>
 <body>
+	<header>
+		<div class="header__link">
+			<svg viewBox="0 0 24 24" class="icon-menu">
+				<path class="icon-menu-js"
+				d=
+					"M4 5h16a1 1 0 0 1 0 
+					2H4a1 1 0 1 1 0-2zm0 
+					6h16a1 1 0 0 1 0 
+					2H4a1 1 0 0 1 0-2zm0 
+					6h16a1 1 0 0 1 0 
+					2H4a1 1 0 0 1 0-2z">
+				</path>
+
+				<path class="close-js" transform="rotate(45 12 12)" 
+				d=
+				"M13 11h6a1 1 0 0 1 0 
+				2h-6v6a1 1 0 0 1-2 
+				0v-6H5a1 1 0 0 1 
+				0-2h6V5a1 1 0 0 1 2 0v6z">					
+				</path>
+			</svg>
+			<div class="menu"> 
+				<a class="nav-links" href="#skill">Услуги</a>
+				<a class="nav-links" href="#work">Портфолио</a>
+				<a class="nav-links" href="#price">Стоимость</a>
+			</div>
+			<div id="small-menu">
+				<a class="nav-links" href="#skill">Услуги</a>
+				<a class="nav-links" href="#work">Портфолио</a>
+				<a class="nav-links" href="#price">Стоимость</a>
+			</div>
+		</div>
+		<button class="header__button button-pink open_fast">Заказать звонок</button>
+	</header>
+	<div class="popup_fast">
+			<form action="url" enctype="multipart/form-data" class="form">
+				<h3>Напишите ваше имя</h3>
+				<input class="form__item" type="text" name="name" value="" placeholder="Ваше имя" required>
+				<h3>Контактный телефон</h3>
+				<input class="form__item" type="tel" name="phone" value="" placeholder=" +79XXXXXXXXX" required>
+				<h3>E-mail</h3>
+				<input class="form__item" type="email" name="email" value="" placeholder="mail@mail.ru" required>
+				<br>
+				<input type="submit" class="button-pink" value="Узнать стоимость">
+			</form>
+	</div>
+	<div class="bg_popup"></div>
+
 	<section class="label">
 		<img class="label__author-photo" src="img/author-photo.png" alt="author-photo">
 		
@@ -30,20 +82,20 @@
 			<div class="label__div div">&lt;div&gt;</div>		
 		</div>
 
-		<header class="label__start">
+		<section class="label__start">
 			<div class="label__name">
 				Евгений Письменный
 			</div>
 			<div class="label__skill">
 				Frontend-разработчик и веб-верстальщик
 			</div>
-			<button class="label__button button-orange">
+			<button class="label__button button-orange open_fast">
 				Узнать больше
 			</button>
-		</header>
+		</section>
 	</section>
 
-	<section class="skill">
+	<section class="skill" id="skill">
 		<div class="container">
 			<header class="skill__header">
 				Что я делаю
@@ -69,25 +121,40 @@
 			</div>
 
 			<div class="skill__button">
-				<button class="button-orange">
+				<button class="button-orange open_fast">
 					Узнать стоимость
 				</button>
 			</div>
 		</div>
 	</section>
 
-	<section class="work-examples">
-
+	<section class="work-examples" id="work">
+		<div class="work-examples_slide">
+			<img src="img/rectangle1.png" alt="Слайд 1" class="slide_img">
+			<p class="work-examples_text">Сайт психолога Веры Антоновой</p>
+		</div>
+		<div class="work-examples_slide">
+			<img src="img/rectangle2.png" alt="Слайд 2" class="slide_img">
+			<p class="work-examples_text">Сайт магазина детской одежды</p>
+		</div>
+		<div class="work-examples_slide">
+			<img src="img/rectangle3.png" alt="Слайд 3" class="slide_img">
+			<p class="work-examples_text">Сайт магазина «Рыболов»</p>
+		</div>
+		<div class="work-examples_slide"> 
+			<img src="img/rectangle4.png" alt="Слайд 4" class="slide_img">
+			<p class="work-examples_text">Сайт новостного агентства</p>
+		</div>
 	</section>
 
-	<div class="price">
+	<section class="price" id="price">
 		<div class="price__content">
 			Адаптивная верстка под все устройства<br> и браузеры от 1000 рублей за 4 часа.*
 		</div>
 		<div class="price__footnote">
 			* Срок и стоимость могут отличатся от заявленных и рассчитываются индивидуально,<br> в зависимости от сложности задач.
 		</div>
-	</div>
+	</section>
 
 
 	<button class="header__button button-pink">Заказать звонок</button>
@@ -104,5 +171,11 @@
 		<span class="ti-mobile"></span>
 		<span class="icon-name">+79254532563</span>
 	</a>
+		<script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

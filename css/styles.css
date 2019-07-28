@@ -503,16 +503,116 @@ th {
        url('../fonts/roboto-v18-latin_cyrillic-900italic.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 html, body {
-  margin: 0;
+  margin: 0 auto;
   min-width: 320px;
+  max-width: 1920px;
 }
 
 * {
   font-family: Roboto;
 }
 
+header {
+  max-width: 1370px;
+  margin: 0 auto 0 200px;
+}
+.header__link {
+  float: left;
+  margin: 20px;
+}
+.icon-menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 30px;
+}
+@media (min-width: 1171px) {
+  .icon-menu {
+    display: none;
+  }
+}
+@media (max-width: 1170px) {
+  .menu {
+    display: none;
+  }
+}
+.close-js {
+  display: none;
+}
+#small-menu {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 100px;
+  height: 230px;
+  display: none;
+  font-size: 18px;
+}
+
+/*Ссылки*/
+.nav-links {
+  margin: 0 5px;
+  text-decoration: none;
+  color: black;
+}
+.nav-links:hover {
+  color: #f82370;
+  text-decoration: underline;
+}
+/*.*/
+
+/*Вплывающее окно*/
+.popup_fast {
+  width: 390px;
+  height: 432px;
+  background: #fff;
+  border-radius: 5px;
+  color: #f82370;
+  z-index: 100;
+  padding: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+.popup_fast.active {
+  display: block;
+  font-size: 16px;
+  color: #483c36;
+  font-weight: bold;
+}
+.bg_popup {
+  position: fixed;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  z-index: 99;
+  background: rgba(0,0,0, .7);
+  display: none;
+}
+.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.form__item {
+  height: 40px;
+}
+/*.*/
+
 .label__start {
-  margin-left:100px;
+  margin-left: 200px;
+}
+@media (max-width: 1170px) {
+  .label__start {
+    margin-left: 100px;
+  }
 }
 
 .label__name {
@@ -743,6 +843,7 @@ html, body {
 
 .header__button {  
   margin: 10px;
+  float: right;
 }
 
 .work-examples__button-left {
@@ -753,7 +854,7 @@ html, body {
   border-radius: 30px;
   border: 0;
   cursor: pointer;
-  background: url(../img/arrow.png) no-repeat;
+  background: url(../img/arrow1.png) no-repeat;
 }
 .vk {
   display: inline-block;
@@ -808,6 +909,72 @@ html, body {
   color: black;
 }
 
+/*Слайдер*/
+.work-examples_slide {
+  margin: auto 15px;
+}
+.work-examples {
+  margin: 100px auto !important;
+  width: 1170px;
+}
+@media (max-width: 1249px) {
+  .work-examples {
+    width: 770px;
+  }
+}
+@media (max-width: 849px) {
+  .work-examples {
+    width: 400px;
+  }
+}
+.work-examples_text {
+  color: #8993ad;
+  text-align: center;
+}
+
+/*Стрелки*/
+.slick-prev, .slick-next {
+  z-index: 1001 !important;
+  width: 60px !important; 
+  height: 60px !important;
+}
+.slick-prev {
+  left: -20px !important;
+}
+.slick-next {
+  right: -30px !important;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 0 !important;
+  padding: 30px !important;
+  box-shadow: 0 0 10px #8993ad;
+  border-radius: 30px;
+}
+.slick-prev:before {
+  background: url(../img/arrow1.png) 50% 50% no-repeat;
+}
+.slick-next:before {
+  background: url(../img/arrow2.png) 50% 50% no-repeat;
+}
+
+/*Точки*/
+.slick-dots li button {
+  
+}
+.slick-dots li button:before {
+  content: '' !important;
+  background: #ebebeb !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
+}
+.slick-dots li .slick-active button {
+  
+}
+.slick-dots li button:hover:before,
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  background: #ff4e2e !important;
+}
 
 .landmark{
   position: absolute;
