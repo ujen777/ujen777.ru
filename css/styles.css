@@ -547,7 +547,7 @@ header {
   top: 50px;
   left: 25px;
   width: 100px;
-  height: 230px;
+  height: 66px;
   display: none;
   font-size: 18px;
   z-index: 98;
@@ -988,6 +988,45 @@ header {
 .slick-dots li.slick-active button:before {
   opacity: 1 !important;
   background: #ff4e2e !important;
+}
+
+/*Footer*/
+.footer__top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  height: 175px;
+  max-width: 1170px;
+  margin: 85px auto 0;
+}
+.footer__menu {
+  width: 100px;
+  font-size: 18px;
+  color: #8993ad;
+  line-height: 30px;
+}
+.footer__menu .nav-links {
+  color: #8993ad;
+}
+.footer__menu .nav-links:hover {
+  color: #f82370;
+}
+.footer__contacts {
+  font-size: 25px;
+  width: 250px;
+}
+.footer__bottom {
+  padding: 30px 0;
+  background-color: #31293c;
+}
+.footer__bottom_text {
+  font-size: 16px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .landmark{
