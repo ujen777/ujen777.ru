@@ -506,6 +506,7 @@ html, body {
   margin: 0 auto;
   min-width: 320px;
   max-width: 1920px;
+  background-color: #fbfbfb;
 }
 
 * {
@@ -558,6 +559,8 @@ header {
   font-weight: bold;
   float: right;
   margin: 20px;
+  text-decoration: none;
+  color: black;
 }
 .header__button {
   margin: 10px;
@@ -736,7 +739,7 @@ header {
 }
 
 .brackets, .hash-sign, .slash, .div {
-  font-size: 28px;
+  font-size: 40px;
   color: #f91482;
   font-weight: bold;
   -webkit-transition: -webkit-transform 1s ease-out;
@@ -755,6 +758,10 @@ header {
   }
 }
 
+[class^="price"] {
+  color: white;
+}
+
 .skill {
   display: -webkit-box;
   display: -webkit-flex;
@@ -762,6 +769,7 @@ header {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
+  background-color: #ffffff;
 }
 
 .container {
@@ -833,6 +841,7 @@ header {
 }
 
 .price {
+  position: relative;
   height: 365px;
   background: -webkit-linear-gradient(75deg, #ff8f5a 20%, #ff2f96 80%);
   background: linear-gradient(15deg, #ff8f5a 20%, #ff2f96 80%);
@@ -853,13 +862,20 @@ header {
 }
 .price__content {
   margin: 10px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
 }
-
 .price__footnote {
   margin: 10px;
-  font-size: 14px;
+  font-size: 19px;
+}
+@media (max-width: 560px) {
+  .price__content {
+    font-size: 28px;
+  }
+  .price__footnote {
+    font-size: 15px;
+  }
 }
 
 .button-pink {
@@ -937,6 +953,11 @@ header {
 }
 
 /*Слайдер*/
+.work-examples__header {
+  font-size: 54px;
+  font-weight: bold;
+  text-align: center;
+}
 .work-examples_slide {
   margin: auto 15px;
 }
@@ -1066,6 +1087,7 @@ header {
   left: 0;
 }
 
+/*label*/
 .label__brackets {
   -webkit-transform: translate(100px, 100px) rotate(30deg);
       -ms-transform: translate(100px, 100px) rotate(30deg);
@@ -1073,15 +1095,15 @@ header {
 }
 
 .label__hash-sign {
-  -webkit-transform: translate(200px, 400px) rotate(30deg);
-      -ms-transform: translate(200px, 400px) rotate(30deg);
-          transform: translate(200px, 400px) rotate(30deg);
+  -webkit-transform: translate(150px, 450px) rotate(30deg);
+      -ms-transform: translate(150px, 450px) rotate(30deg);
+          transform: translate(150px, 450px) rotate(30deg);
 }
 
 .label__slash-1 {
-  -webkit-transform: translate(400px, 120px) rotate(30deg);
-      -ms-transform: translate(400px, 120px) rotate(30deg);
-          transform: translate(400px, 120px) rotate(30deg);
+  -webkit-transform: translate(400px, 80px) rotate(30deg);
+      -ms-transform: translate(400px, 80px) rotate(30deg);
+          transform: translate(400px, 80px) rotate(30deg);
 }
 
 .label__slash-2 {
@@ -1091,9 +1113,9 @@ header {
 }
 
 .label__div {
-  -webkit-transform: translate(1400px, 0px) rotate(390deg);
-      -ms-transform: translate(1400px, 0px) rotate(390deg);
-          transform: translate(1400px, 0px) rotate(390deg);
+  -webkit-transform: translate(1400px, -50px) rotate(390deg);
+      -ms-transform: translate(1400px, -50px) rotate(390deg);
+          transform: translate(1400px, -50px) rotate(390deg);
 }
 
 @media (min-width: 1680px) {
@@ -1114,14 +1136,21 @@ header {
 
 @media (max-width: 1500px) {
   .label__div {
-    -webkit-transform: translate(1200px, 0px) rotate(30deg);
-        -ms-transform: translate(1200px, 0px) rotate(30deg);
-            transform: translate(1200px, 0px) rotate(30deg);
+    -webkit-transform: translate(1200px, -50px) rotate(30deg);
+        -ms-transform: translate(1200px, -50px) rotate(30deg);
+            transform: translate(1200px, -50px) rotate(30deg);
   }
   .label__slash-2 {
     -webkit-transform: translate(300px, 400px) rotate(30deg);
         -ms-transform: translate(300px, 400px) rotate(30deg);
             transform: translate(300px, 400px) rotate(30deg);
+  }
+}
+@media (max-width: 1370px) {
+  .label__slash-1 {
+    -webkit-transform: translate(400px, 40px) rotate(30deg);
+        -ms-transform: translate(400px, 40px) rotate(30deg);
+            transform: translate(400px, 40px) rotate(30deg);
   }
 }
 @media (max-width: 1300px) {
@@ -1131,22 +1160,22 @@ header {
             transform: translate(1020px, -50px) rotate(390deg);
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1125px) {
   .label__div {
-    -webkit-transform: translate(850px, 0px) rotate(30deg);
-        -ms-transform: translate(850px, 0px) rotate(30deg);
-            transform: translate(850px, 0px) rotate(30deg);
+    -webkit-transform: translate(850px, -50px) rotate(30deg);
+        -ms-transform: translate(850px, -50px) rotate(30deg);
+            transform: translate(850px, -50px) rotate(30deg);
   }
   .label__brackets {
-    -webkit-transform: translate(200px, 200px) rotate(30deg);
-        -ms-transform: translate(200px, 200px) rotate(30deg);
-            transform: translate(200px, 200px) rotate(30deg);
+    -webkit-transform: translate(200px, 150px) rotate(30deg);
+        -ms-transform: translate(200px, 150px) rotate(30deg);
+            transform: translate(200px, 150px) rotate(30deg);
   }
   .label__slash-2 {
     display: none;
   }
 }
-@media (max-width: 940px) {
+@media (max-width: 960px) {
   .label__div {
     -webkit-transform: translate(750px, 0px) rotate(30deg);
         -ms-transform: translate(750px, 0px) rotate(30deg);
@@ -1165,9 +1194,9 @@ header {
             transform: translate(300px, 80px) rotate(30deg);
   }
   .label__hash-sign {
-    -webkit-transform: translate(150px, 300px) rotate(30deg);
-        -ms-transform: translate(150px, 300px) rotate(30deg);
-            transform: translate(150px, 300px) rotate(30deg);
+    -webkit-transform: translate(150px, 350px) rotate(30deg);
+        -ms-transform: translate(150px, 350px) rotate(30deg);
+            transform: translate(150px, 350px) rotate(30deg);
   }
 }
 
@@ -1193,11 +1222,11 @@ header {
             transform: translate(100px, 250px) rotate(30deg);
   }
 }
-@media (max-width: 580px) {
+@media (max-width: 600px) {
   .label__div {
-    -webkit-transform: translate(380px, 0px) rotate(30deg);
-        -ms-transform: translate(380px, 0px) rotate(30deg);
-            transform: translate(380px, 0px) rotate(30deg);
+    -webkit-transform: translate(380px, -40px) rotate(30deg);
+        -ms-transform: translate(380px, -40px) rotate(30deg);
+            transform: translate(380px, -40px) rotate(30deg);
   }
   .label__slash-1 {
     -webkit-transform: translate(350px, -50px) rotate(30deg);
@@ -1215,16 +1244,16 @@ header {
             transform: translate(100px, 150px) rotate(30deg);
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 480px) {
   .label__div {
-    -webkit-transform: translate(280px, 30px) rotate(30deg);
-        -ms-transform: translate(280px, 30px) rotate(30deg);
-            transform: translate(280px, 30px) rotate(30deg);
+    -webkit-transform: translate(300px, -50px) rotate(30deg);
+        -ms-transform: translate(300px, -50px) rotate(30deg);
+            transform: translate(300px, -50px) rotate(30deg);
   }
   .label__slash-1 {
-    -webkit-transform: translate(200px, -15px) rotate(30deg);
-        -ms-transform: translate(200px, -15px) rotate(30deg);
-            transform: translate(200px, -15px) rotate(30deg);
+    -webkit-transform: translate(140px, -15px) rotate(30deg);
+        -ms-transform: translate(140px, -15px) rotate(30deg);
+            transform: translate(140px, -15px) rotate(30deg);
   }
   .label__brackets {
     -webkit-transform: translate(50px, 50px) rotate(30deg);
@@ -1235,5 +1264,81 @@ header {
     -webkit-transform: translate(30px, 120px) rotate(30deg);
         -ms-transform: translate(30px, 120px) rotate(30deg);
             transform: translate(30px, 120px) rotate(30deg);
+  }
+}
+@media (max-width: 360px) {
+  .label__div {
+    -webkit-transform: translate(260px, -50px) rotate(30deg);
+        -ms-transform: translate(260px, -50px) rotate(30deg);
+            transform: translate(260px, -50px) rotate(30deg);
+  }
+}
+
+/*price*/
+.price__brackets {
+  -webkit-transform: translate(100px, 100px) rotate(30deg);
+      -ms-transform: translate(100px, 100px) rotate(30deg);
+          transform: translate(100px, 100px) rotate(30deg);
+}
+
+.price__hash-sign {
+  -webkit-transform: translate(150px, 200px) rotate(30deg);
+      -ms-transform: translate(150px, 200px) rotate(30deg);
+          transform: translate(150px, 200px) rotate(30deg);
+}
+
+.price__slash-1 {
+  -webkit-transform: translate(400px, -50px) rotate(30deg);
+      -ms-transform: translate(400px, -50px) rotate(30deg);
+          transform: translate(400px, -50px) rotate(30deg);
+}
+
+.price__slash-2 {
+  -webkit-transform: translate(500px, 150px) rotate(30deg);
+      -ms-transform: translate(500px, 150px) rotate(30deg);
+          transform: translate(500px, 150px) rotate(30deg);
+}
+
+.price__div {
+  -webkit-transform: translate(1400px, 0px) rotate(390deg);
+      -ms-transform: translate(1400px, 0px) rotate(390deg);
+          transform: translate(1400px, 0px) rotate(390deg);
+}
+@media (max-width: 1520px) {
+  .price__div {
+  -webkit-transform: translate(1200px, 0px) rotate(390deg);
+      -ms-transform: translate(1200px, 0px) rotate(390deg);
+          transform: translate(1200px, 0px) rotate(390deg);
+  }
+}
+@media (max-width: 1320px) {
+  .price__div {
+  -webkit-transform: translate(900px, -150px) rotate(30deg);
+      -ms-transform: translate(900px, -150px) rotate(30deg);
+          transform: translate(900px, -150px) rotate(30deg);
+  }
+}
+@media (max-width: 1200px) {
+  .price__brackets {
+  -webkit-transform: translate(100px, 50px) rotate(30deg);
+      -ms-transform: translate(100px, 50px) rotate(30deg);
+          transform: translate(100px, 50px) rotate(30deg);
+  }
+  .price__hash-sign {
+  -webkit-transform: translate(150px, 250px) rotate(30deg);
+      -ms-transform: translate(150px, 250px) rotate(30deg);
+          transform: translate(150px, 250px) rotate(30deg);
+  }
+}
+@media (max-width: 1020px) {
+  .price__div {
+  -webkit-transform: translate(700px, -150px) rotate(30deg);
+      -ms-transform: translate(700px, -150px) rotate(30deg);
+          transform: translate(700px, -150px) rotate(30deg);
+  }
+}
+@media (max-width: 817px) {
+  .price__brackets, .price__hash-sign, .price__slash-1, .price__slash-2, .price__div {
+    display: none;
   }
 }
