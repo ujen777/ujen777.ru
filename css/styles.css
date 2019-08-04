@@ -873,7 +873,6 @@ header {
   outline: none;
 }
 
-
 .work-examples__button-left {
   width: 60px;
   height: 60px;
@@ -987,7 +986,7 @@ header {
 
 /*Точки*/
 .slick-dots li button {
-
+  
 }
 .slick-dots li button:before {
   content: '' !important;
@@ -996,7 +995,7 @@ header {
   opacity: 1 !important;
 }
 .slick-dots li .slick-active button {
-
+  
 }
 .slick-dots li button:hover:before,
 .slick-dots li.slick-active button:before {
@@ -1021,8 +1020,13 @@ header {
 }
 @media (max-width: 560px) {
   .footer__top {
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+            align-items: flex-start;
     height: 300px;
     margin: 25px;
   }
@@ -1045,7 +1049,6 @@ header {
 .footer__menu .nav-links:hover {
   color: #f82370;
 }
-
 .footer__bottom {
   padding: 30px 0;
   background-color: #31293c;
