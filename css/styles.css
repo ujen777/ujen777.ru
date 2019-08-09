@@ -522,7 +522,7 @@ header {
 }
 .icon-menu {
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 20px;
   width: 40px;
   height: 30px;
@@ -566,6 +566,31 @@ header {
   margin: 10px;
   float: right;
 }
+.phone-button {
+  display: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  margin: 17px;
+  float: right;
+  background: url(../img/phone.png) no-repeat;
+}
+.phone-button:hover {
+  background-color: rgb(0, 0, 0, 0.8);
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+@media (max-width: 510px){
+  .phone-button {
+    display: block;
+  }
+  .header__button {
+    display: none;
+  }
+  .header__phone {
+    font-size: 18px;
+  }
+}
 
 /*Ссылки*/
 .nav-links {
@@ -582,7 +607,6 @@ header {
 /*Вплывающее окно*/
 .popup_fast {
   width: 390px;
-  height: 432px;
   background: #fff;
   border-radius: 5px;
   color: #f82370;
@@ -595,11 +619,32 @@ header {
   margin: auto;
   display: none;
 }
+.popup_fast input {
+  width: 386px;
+}
 @media (max-width: 510px) {
   .popup_fast {
     width: 220px;
     padding: 0px 40px;
     height: 420px;
+  }
+  .popup_fast input {
+  width: 216px;
+  }
+}
+@media (max-height: 400px){
+  .popup_fast {
+    width: 450px;
+    padding: 0px 40px;
+    height: 240px;
+  }
+  .popup_fast input {
+    width: 216px;
+  }
+  .popup_fast-right {
+    position: absolute;
+    left: 280px;
+    top: 0;
   }
 }
 .popup_fast.active {
@@ -770,6 +815,7 @@ header {
   -webkit-justify-content: center;
           justify-content: center;
   background-color: #ffffff;
+  padding-bottom: 50px;
 }
 
 .container {
@@ -814,6 +860,20 @@ header {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
+}
+.work__button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin: 100px;
+}
+@media (max-width: 1249px) {
+  .work__button {
+    margin: 50px;
+  }
 }
 
 .block-img{
@@ -888,6 +948,11 @@ header {
   width: 210px;
   outline: none;
 }
+.button-pink:hover {
+  background-color: rgb(0, 0, 0, 0.8);
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
 
 .work-examples__button-left {
   width: 60px;
@@ -954,9 +1019,15 @@ header {
 
 /*Слайдер*/
 .work-examples__header {
+  margin-bottom: -50px;
   font-size: 54px;
   font-weight: bold;
   text-align: center;
+}
+@media (max-width: 510px) {
+  .work-examples__header {
+    font-size: 30px;
+  }
 }
 .work-examples_slide {
   margin: auto 15px;
