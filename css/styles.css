@@ -1090,9 +1090,6 @@ header {
   .footer__contacts {
     font-size: 16px;
   }
-  .icon-container {
-    color: #8993ad;
-  }
 }
 .footer__button {
   margin-bottom: 20px;
@@ -1136,6 +1133,11 @@ header {
 .icon-container {
   text-decoration: none;
   color: black;
+}
+@media (max-width: 560px) {
+  .icon-container {
+    color: #8993ad;
+  }
 }
 /*.*/
 
