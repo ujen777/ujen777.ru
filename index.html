@@ -21,7 +21,7 @@
 </head>
 <body>
 	<header>
-		<div class="header__link">
+		<button class="header__link" aria-label="Открыть меню">
 			<svg viewBox="0 0 24 24" class="icon-menu">
 				<path class="icon-menu-js"
 				d=
@@ -41,17 +41,13 @@
 				0-2h6V5a1 1 0 0 1 2 0v6z">
 				</path>
 			</svg>
-			<div class="menu">
-				<a class="nav-links" href="#skill">Услуги</a>
-				<a class="nav-links" href="#work">Портфолио</a>
-				<a class="nav-links" href="#price">Стоимость</a>
-			</div>
-			<div id="small-menu">
-				<a class="nav-links" href="#skill">Услуги</a>
-				<a class="nav-links" href="#work">Портфолио</a>
-				<a class="nav-links" href="#price">Стоимость</a>
-			</div>
-		</div>
+		</button>
+
+		<nav class="menu">
+			<a class="nav-links" href="#skill">Услуги</a>
+			<a class="nav-links" href="#work">Портфолио</a>
+			<a class="nav-links" href="#price">Стоимость</a>
+		</nav>
 
 		<button class="header__button button-pink open_fast">
 			Заказать звонок
@@ -97,7 +93,7 @@
 			<div class="label__div div">&lt;div&gt;</div>
 		</div>
 
-		<section class="label__start">
+		<div class="label__start">
 			<div class="label__name">
 				Евгений Письменный
 			</div>
@@ -107,75 +103,75 @@
 			<button class="label__button button-orange open_fast">
 				Узнать больше
 			</button>
-		</section>
+		</div>
 	</section>
 
 	<section class="skill" id="skill">
-		<div class="container">
-			<header class="skill__header">
-				Что я делаю
-			</header>
+		<header class="skill__header">
+			Что я делаю
+		</header>
 
-			<div class="skill__list">
+		<div class="skill__list">
 
-				<div class="layout block-img">
-					Вёрстка лендинг–страниц и сайтов любой сложности
-				</div>
-
-				<div class="adaptive block-img">
-					Адаптивная вёрстка под все браузеры и устройства
-				</div>
-
-				<div class="programming block-img">
-					Frontend–разработка и программирование
-				</div>
-
-				<div class="rework block-img">
-					Исправление и доработка существующей вёрстки
-				</div>
+			<div class="layout block-img">
+				Вёрстка лендинг–страниц и сайтов любой сложности
 			</div>
 
-			<div class="skill__button">
-				<button class="button-orange open_fast">
-					Узнать стоимость
-				</button>
+			<div class="adaptive block-img">
+				Адаптивная вёрстка под все браузеры и устройства
 			</div>
+
+			<div class="programming block-img">
+				Frontend–разработка и программирование
+			</div>
+
+			<div class="rework block-img">
+				Исправление и доработка существующей вёрстки
+			</div>
+		</div>
+
+		<div class="skill__button">
+			<button class="button-orange open_fast">
+				Узнать стоимость
+			</button>
 		</div>
 	</section>
 
-	<header class="work-examples__header">
+
+	<section class="work-examples">
+		<header class="work-examples__header">
 			Примеры моих работ
-	</header>
-	<section class="work-examples" id="work">
-		<div class="work-examples_slide">
-			<img src="img/rectangle1.png" alt="Слайд 1" class="slide_img">
-			<p class="work-examples_text">Сайт психолога Веры Антоновой</p>
+		</header>
+		<div class="work-examples__slider">
+			<div class="work-examples_slide">
+				<img src="img/rectangle1.png" alt="Слайд 1" class="slide_img">
+				<p class="work-examples_text">Сайт психолога Веры Антоновой</p>
+			</div>
+			<div class="work-examples_slide">
+				<img src="img/rectangle2.png" alt="Слайд 2" class="slide_img">
+				<p class="work-examples_text">Сайт магазина детской одежды</p>
+			</div>
+			<div class="work-examples_slide">
+				<img src="img/rectangle3.png" alt="Слайд 3" class="slide_img">
+				<p class="work-examples_text">Сайт магазина «Рыболов»</p>
+			</div>
+			<div class="work-examples_slide">
+				<img src="img/rectangle4.png" alt="Слайд 4" class="slide_img">
+				<p class="work-examples_text">Сайт новостного агентства</p>
+			</div>
 		</div>
-		<div class="work-examples_slide">
-			<img src="img/rectangle2.png" alt="Слайд 2" class="slide_img">
-			<p class="work-examples_text">Сайт магазина детской одежды</p>
-		</div>
-		<div class="work-examples_slide">
-			<img src="img/rectangle3.png" alt="Слайд 3" class="slide_img">
-			<p class="work-examples_text">Сайт магазина «Рыболов»</p>
-		</div>
-		<div class="work-examples_slide">
-			<img src="img/rectangle4.png" alt="Слайд 4" class="slide_img">
-			<p class="work-examples_text">Сайт новостного агентства</p>
-		</div>
-	</section>
-	<div class="work__button">
-		<button class="button-orange open_fast">
+		<button class="work-examples__button button-orange open_fast">
 			Заказать проект
 		</button>
-	</div>
+	</section>
+
 	<section class="price" id="price">
-		<div class="price__content">
-			Адаптивная верстка под все устройства<br> и браузеры от 1000 рублей за 4 часа.*
-		</div>
-		<div class="price__footnote">
-			* Срок и стоимость могут отличатся от заявленных и рассчитываются индивидуально,<br> в зависимости от сложности задач.
-		</div>
+		<p class="price__content">
+			Адаптивная верстка под все устройства и браузеры от 1000 рублей за 4 часа.*
+		</p>
+		<p class="price__footnote">
+			* Срок и стоимость могут отличатся от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.
+		</p>
 		<div class="landmark">
 			<div class="price__brackets brackets">{ }</div>
 
@@ -189,40 +185,44 @@
 		</div>
 	</section>
 
-	<footer class="footer__top">
-		<div class="footer__menu">
-			<a class="nav-links" href="#skill">Услуги</a>
-			<a class="nav-links" href="#work">Портфолио</a>
-			<a class="nav-links" href="#price">Стоимость</a>
-		</div>
+	<footer>
+		<div class="footer__top">
+			<ul class="footer__menu">
+				<li><a class="nav-links" href="#skill">Услуги</a></li>
+				<li><a class="nav-links" href="#work">Портфолио</a></li>
+				<li><a class="nav-links" href="#price">Стоимость</a></li>
+			</ul>
 
-		<div class="footer__contacts">
-			<a href="tel:+79254532563" class="icon-container">
-				<span class="ti-mobile"></span>
-				<span class="icon-name">&nbsp+79254532563</span>
-			</a>
-			<br><br>
-			<a href="mailto:ujen777@mail.ru" class="icon-container">
-				<span class="ti-email"></span>
-				<span class="icon-name">&nbspujen777@mail.ru</span>
-			</a>
-		</div>
+			<div class="footer__contacts">
+				<a href="tel:+79254532563" class="icon-container">
+					<span class="ti-mobile"></span>
+					<span class="icon-name">&nbsp+79254532563</span>
+				</a>
 
-		<div class="footer__media">
-			<button class="footer__button button-pink open_fast">Заказать звонок</button>
-			<br><br>
-			<a class="vk" href="https://vk.com/feed" target="_blank"></a>
-			<a class="facebook" href="https://ru-ru.facebook.com/" target="_blank"></a>
-			<a class="twitter" href="https://twitter.com" target="_blank"></a>
-			<a class="instagram" href="https://www.instagram.com/?hl=ru" target="_blank"></a>
+				<a href="mailto:ujen777@mail.ru" class="icon-container">
+					<span class="ti-email"></span>
+					<span class="icon-name">&nbspujen777@mail.ru</span>
+				</a>
+			</div>
+
+			<div class="footer__media">
+				<button class="footer__button button-pink open_fast">Заказать звонок</button>
+				<ul class="social__item">
+					<li><a class="vk" href="https://vk.com/feed" target="_blank"></a></li>
+					<li><a class="facebook" href="https://ru-ru.facebook.com/" target="_blank"></a></li>
+					<li><a class="twitter" href="https://twitter.com" target="_blank"></a></li>
+					<li><a class="instagram" href="https://www.instagram.com/?hl=ru" target="_blank"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom_text">
+				© Письменный Евгений, 2019
+			</div>
 		</div>
 	</footer>
-	<footer class="footer__bottom">
-		<div class="footer__bottom_text">
-			© Письменный Евгений, 2019
-		</div>
-	</footer>
-		<script
+
+	<script
   src="http://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
