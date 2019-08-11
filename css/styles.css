@@ -554,11 +554,10 @@ html, body {
 }
 
 .header__link {
-  position: absolute;
   width: 40px;
   height: 30px;
   margin: 17px 0;
-  background: rgb(255,255,255,0);
+  background: none;
   border: none;
   outline: none;
 }
@@ -575,7 +574,7 @@ html, body {
   height: 30px;
 }
 @media (min-width: 1201px) {
-  .icon-menu {
+  .header__link {
     display: none;
   }
 }
@@ -731,7 +730,6 @@ html, body {
 .label {
   position: relative;
   background: url(../img/ellipse.svg) no-repeat right top 200px;
-  height: 600px;
 }
 @media (min-width: 1201px) {
   .label {
@@ -749,7 +747,9 @@ html, body {
           align-items: center;
   max-width: 1170px;
   margin: auto;
-  height: 600px;
+}
+.label__start {
+  padding: 156px 0;
 }
 @media (max-width: 1200px) {
   .container {
@@ -757,12 +757,13 @@ html, body {
   }
 }
 
-.label__name {
+.label__name h1{
+  margin: 0;
   font-size: 72px;
   font-weight: 900;
 }
 @media (max-width: 1370px) {
-  .label__name {
+  .label__name h1{
     width: 500px
   }
 }
@@ -784,9 +785,6 @@ html, body {
 }
 
 @media (max-width: 990px) {
-  .label {
-    height: 900px;
-  }
   .container {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
@@ -794,25 +792,19 @@ html, body {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
             justify-content: center;
-    height: 900px;
   }
   .label__start {
+    padding-top: 600px;
+    padding-bottom: 0;
     margin: 0px;
-  }
-  .label__author-photo {
-    bottom: 300px;
   }
 }
 @media (max-width: 510px) {
   .label {
     background-position: right top 140px;
     background-size: auto 300px;
-    height: 600px;
   }
-  .container {
-    height: 600px;
-  }
-  .label__name {
+  .label__name h1{
     font-size: 26px;
     width: auto;
   }
@@ -829,6 +821,7 @@ html, body {
   }
   .label__start {
     margin: 0 20px;
+    padding-top: 450px;
   }
 }
 
@@ -868,13 +861,14 @@ html, body {
   padding: 50px 0;
 }
 
-.skill__header {
+.skill h2 {
   font-size: 54px;
   font-weight: bold;
   text-align: center;
+  margin: 0;
 }
 @media (max-width: 510px) {
-  .skill__header {
+  .skill h2 {
     font-size: 30px;
   }
 }
@@ -891,12 +885,7 @@ html, body {
 }
 
 .skill__button {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
+  margin: auto;
 }
 .block-img{
   width: 220px;
@@ -933,31 +922,36 @@ html, body {
           flex-direction: column;
   width: 1170px;
   margin: auto;
+  padding: 50px 0;
 }
-.work-examples__header {
-  margin: 30px;
+.work-examples h2 {
+  margin: 0px;
   font-size: 54px;
   font-weight: bold;
   text-align: center;
 }
+.work-examples__slider {
+  padding-top: 30px;
+}
 .work-examples__button {
-  margin: 50px auto;
+  margin: 50px auto 0;
 }
 
 
 /*Слайдер*/
+.work-examples_slide {
+  margin: 20px;
+}
+
 @media (max-width: 510px) {
-  .work-examples__header {
+  .work-examples h2 {
     font-size: 30px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 410px) {
   .work-examples_slide img {
     width: 280px;
-  }
-  .work-examples_slide {
-    margin: 20px;
   }
 }
 
@@ -971,11 +965,11 @@ html, body {
     width: 400px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 410px) {
   .work-examples {
     width: 320px;
   }
-  .work-examples__header {
+  .work-examples h2 {
     margin: 0;
   }
 }
@@ -1036,7 +1030,6 @@ html, body {
 
 .price {
   position: relative;
-  height: 365px;
   background: -webkit-linear-gradient(75deg, #ff8f5a 20%, #ff2f96 80%);
   background: linear-gradient(15deg, #ff8f5a 20%, #ff2f96 80%);
   color: white;
@@ -1053,6 +1046,7 @@ html, body {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
+  padding: 90px 0;
 }
 .price__content {
   margin: 10px;
@@ -1066,11 +1060,15 @@ html, body {
   max-width: 800px;
 }
 @media (max-width: 560px) {
+  .price {
+    padding: 50px 0;
+  }
   .price__content {
     font-size: 28px;
   }
   .price__footnote {
     font-size: 15px;
+    line-height: 30px;
   }
 }
 
@@ -1082,10 +1080,9 @@ html, body {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
-  height: 175px;
   max-width: 1170px;
   margin: auto;
-  padding-top: 50px;
+  padding: 50px 0;
 }
 .footer__contacts {
   font-size: 25px;
