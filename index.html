@@ -20,7 +20,7 @@
 	<meta name="theme-color" content="#ff2f96">
 </head>
 <body>
-	<header>
+	<header class="header">
 		<button class="header__link" aria-label="Открыть меню">
 			<svg viewBox="0 0 24 24" class="icon-menu">
 				<path class="icon-menu-js"
@@ -35,10 +35,10 @@
 
 				<path class="close-js" transform="rotate(45 12 12)"
 				d=
-				"M13 11h6a1 1 0 0 1 0
-				2h-6v6a1 1 0 0 1-2
-				0v-6H5a1 1 0 0 1
-				0-2h6V5a1 1 0 0 1 2 0v6z">
+					"M13 11h6a1 1 0 0 1 0
+					2h-6v6a1 1 0 0 1-2
+					0v-6H5a1 1 0 0 1
+					0-2h6V5a1 1 0 0 1 2 0v6z">
 				</path>
 			</svg>
 		</button>
@@ -49,13 +49,15 @@
 			<a class="nav-links" href="#price">Стоимость</a>
 		</nav>
 
-		<button class="header__button button-pink open_fast">
-			<span>Заказать звонок</span>
-		</button>
+		<div class="header__contacts">
+			<a href="tel:+79254532563" class="header__phone">
+				<span>+79254532563</span>
+			</a>
 
-		<a href="tel:+79254532563" class="header__phone">
-			<span>+79254532563</span>
-		</a>
+			<button class="header__button button-pink open_fast">
+				<span>Заказать звонок</span>
+			</button>
+		</div>
 
 		<div class="popup_fast">
 			<form action="url" enctype="multipart/form-data" class="form">
@@ -80,30 +82,32 @@
 
 	<main>
 		<section class="label">
-			<img class="label__author-photo" src="img/author-photo.png" alt="author-photo">
+			<div class="container">
+				<img class="label__author-photo" src="img/author-photo.png" alt="author-photo">
 
-			<div class="landmark">
-				<div class="label__brackets brackets">{ }</div>
+				<div class="landmark">
+					<div class="label__brackets brackets">{ }</div>
 
-				<div class="label__hash-sign hash-sign">#</div>
+					<div class="label__hash-sign hash-sign">#</div>
 
-				<div class="label__slash-1 slash ">&lt;/&gt;</div>
+					<div class="label__slash-1 slash ">&lt;/&gt;</div>
 
-				<div class="label__slash-2 slash ">&lt;/&gt;</div>
+					<div class="label__slash-2 slash ">&lt;/&gt;</div>
 
-				<div class="label__div div">&lt;div&gt;</div>
-			</div>
-
-			<div class="label__start">
-				<div class="label__name">
-					Евгений Письменный
+					<div class="label__div div">&lt;div&gt;</div>
 				</div>
-				<div class="label__skill">
-					Frontend-разработчик и веб-верстальщик
+
+				<div class="label__start">
+					<div class="label__name">
+						Евгений Письменный
+					</div>
+					<div class="label__skill">
+						Frontend-разработчик и веб-верстальщик
+					</div>
+					<button class="label__button button-orange open_fast">
+						Узнать больше
+					</button>
 				</div>
-				<button class="label__button button-orange open_fast">
-					Узнать больше
-				</button>
 			</div>
 		</section>
 

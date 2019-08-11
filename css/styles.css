@@ -541,39 +541,51 @@ html, body {
 }
 
 /*Header*/
-header {
-  max-width: 1370px;
+.header {
+  max-width: 1170px;
   margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
 }
 
 .header__link {
   position: absolute;
-  top: 15px;
-  left: 20px;
   width: 40px;
   height: 30px;
+  margin: 17px 0;
   background: rgb(255,255,255,0);
   border: none;
   outline: none;
 }
+@media (max-width: 990px) {
+  .header__link {
+    margin: 17px;
+  }
+}
 .icon-menu {
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
   width: 40px;
   height: 30px;
 }
-@media (min-width: 1171px) {
+@media (min-width: 1201px) {
   .icon-menu {
     display: none;
   }
 }
 .menu {
-  float: left;
-  margin: 20px;
-  margin-left: 200px;
+  margin: 20px 0;
 }
-@media (max-width: 1170px) {
+@media (max-width: 1200px) {
+  .header {
+    max-width: 945px;
+  }
   .menu {
     display: none;
     position: absolute;
@@ -585,29 +597,38 @@ header {
     z-index: 98;
     margin: 0;
   }
+  .header__link {
+    position: relative;
+  }
 }
 .close-js {
   display: none;
 }
-
+.header__contacts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
 .header__phone {
+  display: block;
+  margin: 22px 0;
   font-size: 25px;
   font-weight: bold;
-  float: right;
-  margin: 20px;
   text-decoration: none;
   color: black;
 }
 .header__button {
   margin: 10px;
-  float: right;
 }
 @media (max-width: 510px){
   .header__button {
     width: 26px;
     height: 26px;
     border-radius: 13px;
-    margin: 17px;
+    margin: 20px;
     padding: 0;
     background: url(../img/phone.png) no-repeat -1px -1px;
   }
@@ -706,12 +727,33 @@ header {
 }
 /*.*/
 
-.label__start {
-  margin-left: 200px;
+/*label*/
+.label {
+  position: relative;
+  background: url(../img/ellipse.svg) no-repeat right top 200px;
+  height: 600px;
 }
-@media (max-width: 1170px) {
-  .label__start {
-    margin-left: 100px;
+@media (min-width: 1201px) {
+  .label {
+    background-size: auto 550px;
+    background-position: right top 50px;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  max-width: 1170px;
+  margin: auto;
+  height: 600px;
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 945px;
   }
 }
 
@@ -737,33 +779,21 @@ header {
 .label__author-photo {
   position: absolute;
   right: 8%;
-  bottom: 0;
+  top: 40px;
   width: 400px;
 }
 
-.label {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-  background:
-  url(../img/ellipse.svg) no-repeat right bottom;
-  width: 100%;
-  height: 600px;
-}
 @media (max-width: 990px) {
   .label {
+    height: 900px;
+  }
+  .container {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
             align-items: flex-end;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
             justify-content: center;
-    background-position:
-    right bottom 300px;
     height: 900px;
   }
   .label__start {
@@ -774,6 +804,14 @@ header {
   }
 }
 @media (max-width: 510px) {
+  .label {
+    background-position: right top 140px;
+    background-size: auto 300px;
+    height: 600px;
+  }
+  .container {
+    height: 600px;
+  }
   .label__name {
     font-size: 26px;
     width: auto;
@@ -782,15 +820,9 @@ header {
     font-size: 16px;
     text-align: center;
   }
-  .label {
-    background-position:
-    right bottom 160px;
-    height: 600px;
-    background-size: 450px;
-  }
   .label__author-photo {
     width: 280px;
-    bottom: 160px;
+    top: 48px;
   }
   .label__button {
     margin-top: 20px;
@@ -1196,32 +1228,32 @@ header {
 }
 
 .label__div {
-  -webkit-transform: translate(1400px, -50px) rotate(390deg);
-      -ms-transform: translate(1400px, -50px) rotate(390deg);
-          transform: translate(1400px, -50px) rotate(390deg);
+  -webkit-transform: translate(1200px, -150px) rotate(30deg);
+      -ms-transform: translate(1200px, -150px) rotate(30deg);
+          transform: translate(1200px, -150px) rotate(30deg); 
 }
 
-@media (min-width: 1680px) {
+@media (max-width: 1900px) {
   .label__div {
-    -webkit-transform: translate(1150px, 0px) rotate(30deg);
-        -ms-transform: translate(1150px, 0px) rotate(30deg);
-            transform: translate(1150px, 0px) rotate(30deg);
+    -webkit-transform: translate(1000px, -100px) rotate(30deg);
+        -ms-transform: translate(1000px, -100px) rotate(30deg);
+            transform: translate(1000px, -100px) rotate(30deg);
   }
 }
 
-@media (min-width: 1900px) {
+@media (max-width: 1680px) {
   .label__div {
-    -webkit-transform: translate(1350px, 0px) rotate(30deg);
-        -ms-transform: translate(1350px, 0px) rotate(30deg);
-            transform: translate(1350px, 0px) rotate(30deg);
+    -webkit-transform: translate(800px, -50px) rotate(390deg);
+        -ms-transform: translate(800px, -50px) rotate(390deg);
+            transform: translate(800px, -50px) rotate(390deg);
   }
 }
 
 @media (max-width: 1500px) {
   .label__div {
-    -webkit-transform: translate(1200px, -50px) rotate(30deg);
-        -ms-transform: translate(1200px, -50px) rotate(30deg);
-            transform: translate(1200px, -50px) rotate(30deg);
+    -webkit-transform: translate(650px, -100px) rotate(30deg);
+        -ms-transform: translate(650px, -100px) rotate(30deg);
+            transform: translate(650px, -100px) rotate(30deg);
   }
   .label__slash-2 {
     -webkit-transform: translate(300px, 400px) rotate(30deg);
@@ -1231,16 +1263,16 @@ header {
 }
 @media (max-width: 1370px) {
   .label__slash-1 {
-    -webkit-transform: translate(400px, 40px) rotate(30deg);
-        -ms-transform: translate(400px, 40px) rotate(30deg);
-            transform: translate(400px, 40px) rotate(30deg);
+    -webkit-transform: translate(380px, 40px) rotate(30deg);
+        -ms-transform: translate(380px, 40px) rotate(30deg);
+            transform: translate(380px, 40px) rotate(30deg);
   }
 }
 @media (max-width: 1300px) {
   .label__div {
-    -webkit-transform: translate(1020px, -50px) rotate(390deg);
-        -ms-transform: translate(1020px, -50px) rotate(390deg);
-            transform: translate(1020px, -50px) rotate(390deg);
+    -webkit-transform: translate(500px, -100px) rotate(390deg);
+        -ms-transform: translate(500px, -100px) rotate(390deg);
+            transform: translate(500px, -100px) rotate(390deg);
   }
 }
 @media (max-width: 1125px) {
@@ -1260,9 +1292,9 @@ header {
 }
 @media (max-width: 960px) {
   .label__div {
-    -webkit-transform: translate(750px, 0px) rotate(30deg);
-        -ms-transform: translate(750px, 0px) rotate(30deg);
-            transform: translate(750px, 0px) rotate(30deg);
+    -webkit-transform: translate(740px, 0px) rotate(30deg);
+        -ms-transform: translate(740px, 0px) rotate(30deg);
+            transform: translate(740px, 0px) rotate(30deg);
   }
 }
 @media (max-width: 840px) {
@@ -1329,9 +1361,9 @@ header {
 }
 @media (max-width: 480px) {
   .label__div {
-    -webkit-transform: translate(300px, -50px) rotate(30deg);
-        -ms-transform: translate(300px, -50px) rotate(30deg);
-            transform: translate(300px, -50px) rotate(30deg);
+    -webkit-transform: translate(310px, -50px) rotate(30deg);
+        -ms-transform: translate(310px, -50px) rotate(30deg);
+            transform: translate(310px, -50px) rotate(30deg);
   }
   .label__slash-1 {
     -webkit-transform: translate(140px, -15px) rotate(30deg);
