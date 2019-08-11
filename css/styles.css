@@ -749,7 +749,7 @@ html, body {
   margin: auto;
 }
 .label__start {
-  padding: 156px 0;
+  padding: 199px 0;
 }
 @media (max-width: 1200px) {
   .container {
@@ -765,6 +765,9 @@ html, body {
 @media (max-width: 1370px) {
   .label__name h1{
     width: 500px
+  }
+  .label__start {
+  padding: 156px 0;
   }
 }
 
