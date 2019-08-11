@@ -59,8 +59,8 @@
 		<a href="tel:+79254532563" class="header__phone">
 			<span>+79254532563</span>
 		</a>
-	</header>
-	<div class="popup_fast">
+
+		<div class="popup_fast">
 			<form action="url" enctype="multipart/form-data" class="form">
 				<div class="popup_fast-left">
 					<h3>Напишите ваше имя</h3>
@@ -68,6 +68,7 @@
 					<h3>Контактный телефон</h3>
 					<input class="form__item" type="tel" name="phone" value="" placeholder="&nbsp+79XXXXXXXXX" required>
 				</div>
+				
 				<div class="popup_fast-right">
 					<h3>E-mail</h3>
 					<input class="form__item" type="email" name="email" value="" placeholder="&nbsp mail@mail.ru" required>
@@ -75,115 +76,119 @@
 					<input type="submit" class="button-pink" value="Узнать стоимость">
 				</div>
 			</form>
-	</div>
-	<div class="bg_popup"></div>
-
-	<section class="label">
-		<img class="label__author-photo" src="img/author-photo.png" alt="author-photo">
-
-		<div class="landmark">
-			<div class="label__brackets brackets">{ }</div>
-
-			<div class="label__hash-sign hash-sign">#</div>
-
-			<div class="label__slash-1 slash ">&lt;/&gt;</div>
-
-			<div class="label__slash-2 slash ">&lt;/&gt;</div>
-
-			<div class="label__div div">&lt;div&gt;</div>
 		</div>
 
-		<div class="label__start">
-			<div class="label__name">
-				Евгений Письменный
+		<div class="bg_popup"></div>	
+	</header>
+
+	<main>
+		<section class="label">
+			<img class="label__author-photo" src="img/author-photo.png" alt="author-photo">
+
+			<div class="landmark">
+				<div class="label__brackets brackets">{ }</div>
+
+				<div class="label__hash-sign hash-sign">#</div>
+
+				<div class="label__slash-1 slash ">&lt;/&gt;</div>
+
+				<div class="label__slash-2 slash ">&lt;/&gt;</div>
+
+				<div class="label__div div">&lt;div&gt;</div>
 			</div>
-			<div class="label__skill">
-				Frontend-разработчик и веб-верстальщик
+
+			<div class="label__start">
+				<div class="label__name">
+					Евгений Письменный
+				</div>
+				<div class="label__skill">
+					Frontend-разработчик и веб-верстальщик
+				</div>
+				<button class="label__button button-orange open_fast">
+					Узнать больше
+				</button>
 			</div>
-			<button class="label__button button-orange open_fast">
-				Узнать больше
+		</section>
+
+		<section class="skill" id="skill">
+			<header class="skill__header">
+				Что я делаю
+			</header>
+
+			<div class="skill__list">
+
+				<div class="layout block-img">
+					Вёрстка лендинг–страниц и сайтов любой сложности
+				</div>
+
+				<div class="adaptive block-img">
+					Адаптивная вёрстка под все браузеры и устройства
+				</div>
+
+				<div class="programming block-img">
+					Frontend–разработка и программирование
+				</div>
+
+				<div class="rework block-img">
+					Исправление и доработка существующей вёрстки
+				</div>
+			</div>
+
+			<div class="skill__button">
+				<button class="button-orange open_fast">
+					Узнать стоимость
+				</button>
+			</div>
+		</section>
+
+
+		<section class="work-examples">
+			<header class="work-examples__header">
+				Примеры моих работ
+			</header>
+			<div class="work-examples__slider">
+				<div class="work-examples_slide">
+					<img src="img/rectangle1.png" alt="Слайд 1" class="slide_img">
+					<p class="work-examples_text">Сайт психолога Веры Антоновой</p>
+				</div>
+				<div class="work-examples_slide">
+					<img src="img/rectangle2.png" alt="Слайд 2" class="slide_img">
+					<p class="work-examples_text">Сайт магазина детской одежды</p>
+				</div>
+				<div class="work-examples_slide">
+					<img src="img/rectangle3.png" alt="Слайд 3" class="slide_img">
+					<p class="work-examples_text">Сайт магазина «Рыболов»</p>
+				</div>
+				<div class="work-examples_slide">
+					<img src="img/rectangle4.png" alt="Слайд 4" class="slide_img">
+					<p class="work-examples_text">Сайт новостного агентства</p>
+				</div>
+			</div>
+			<button class="work-examples__button button-orange open_fast">
+				Заказать проект
 			</button>
-		</div>
-	</section>
+		</section>
 
-	<section class="skill" id="skill">
-		<header class="skill__header">
-			Что я делаю
-		</header>
+		<section class="price" id="price">
+			<p class="price__content">
+				Адаптивная верстка под все устройства и браузеры от 1000 рублей за 4 часа.*
+			</p>
+			<p class="price__footnote">
+				* Срок и стоимость могут отличатся от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.
+			</p>
+			<div class="landmark">
+				<div class="price__brackets brackets">{ }</div>
 
-		<div class="skill__list">
+				<div class="price__hash-sign hash-sign">#</div>
 
-			<div class="layout block-img">
-				Вёрстка лендинг–страниц и сайтов любой сложности
+				<div class="price__slash-1 slash ">&lt;/&gt;</div>
+
+				<div class="price__slash-2 slash ">&lt;/&gt;</div>
+
+				<div class="price__div div">&lt;div&gt;</div>
 			</div>
-
-			<div class="adaptive block-img">
-				Адаптивная вёрстка под все браузеры и устройства
-			</div>
-
-			<div class="programming block-img">
-				Frontend–разработка и программирование
-			</div>
-
-			<div class="rework block-img">
-				Исправление и доработка существующей вёрстки
-			</div>
-		</div>
-
-		<div class="skill__button">
-			<button class="button-orange open_fast">
-				Узнать стоимость
-			</button>
-		</div>
-	</section>
-
-
-	<section class="work-examples">
-		<header class="work-examples__header">
-			Примеры моих работ
-		</header>
-		<div class="work-examples__slider">
-			<div class="work-examples_slide">
-				<img src="img/rectangle1.png" alt="Слайд 1" class="slide_img">
-				<p class="work-examples_text">Сайт психолога Веры Антоновой</p>
-			</div>
-			<div class="work-examples_slide">
-				<img src="img/rectangle2.png" alt="Слайд 2" class="slide_img">
-				<p class="work-examples_text">Сайт магазина детской одежды</p>
-			</div>
-			<div class="work-examples_slide">
-				<img src="img/rectangle3.png" alt="Слайд 3" class="slide_img">
-				<p class="work-examples_text">Сайт магазина «Рыболов»</p>
-			</div>
-			<div class="work-examples_slide">
-				<img src="img/rectangle4.png" alt="Слайд 4" class="slide_img">
-				<p class="work-examples_text">Сайт новостного агентства</p>
-			</div>
-		</div>
-		<button class="work-examples__button button-orange open_fast">
-			Заказать проект
-		</button>
-	</section>
-
-	<section class="price" id="price">
-		<p class="price__content">
-			Адаптивная верстка под все устройства и браузеры от 1000 рублей за 4 часа.*
-		</p>
-		<p class="price__footnote">
-			* Срок и стоимость могут отличатся от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.
-		</p>
-		<div class="landmark">
-			<div class="price__brackets brackets">{ }</div>
-
-			<div class="price__hash-sign hash-sign">#</div>
-
-			<div class="price__slash-1 slash ">&lt;/&gt;</div>
-
-			<div class="price__slash-2 slash ">&lt;/&gt;</div>
-
-			<div class="price__div div">&lt;div&gt;</div>
-		</div>
-	</section>
+		</section>
+	</main>
 
 	<footer>
 		<div class="footer__top">
